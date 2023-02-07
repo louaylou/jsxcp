@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import "bulma/css/bulma.css";
+import ProfilePhoto from './component/Profile/Profilephoto';
+import FullName from './component/Profile/Fullname';
+import Address from './component/Profile/Adress';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ background: 'lightgray', padding: '20px' }}>
+      <ProfilePhoto />
+      <FullName />
+      <Address />
     </div>
   );
 }
